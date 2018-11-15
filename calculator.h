@@ -4,8 +4,13 @@
 class Calculator
 {
     public:
-        int Add (double, double);
-        int Sub (double, double);
+        static int Add (int, int);
+        static int Mul (double, double);
+	//Hello world
+	//This is test
+	//Second lab
+	//KPI
+	//IO-01 Horbonos Oleh
 };
 
 #endif//CALCULATOR_H
