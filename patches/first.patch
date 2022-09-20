@@ -1,0 +1,66 @@
+From 4a01e3cc2a83e8fbb1214ed441107f93b66db025 Mon Sep 17 00:00:00 2001
+From: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Date: Thu, 15 Nov 2018 15:26:35 +0200
+Subject: [PATCH] formatting: use tabs instead of spaces
+
+Signed-off-by: Sergii Piatakov <sergii.piatakov@globallogic.com>
+Signed-off-by: Oleh Horbonos <oleg245200@gmail.com>
+---
+ calculator.cpp      | 2 +-
+ calculator.cpp.orig | 8 ++++----
+ calculator.h        | 6 +++---
+ 3 files changed, 8 insertions(+), 8 deletions(-)
+
+diff --git a/calculator.cpp b/calculator.cpp
+index d93e35b..d10f529 100644
+--- a/calculator.cpp
++++ b/calculator.cpp
+@@ -7,5 +7,5 @@ int Calculator::Add (double a, double b)
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.cpp.orig b/calculator.cpp.orig
+index 34f8d05..e574624 100644
+--- a/calculator.cpp.orig
++++ b/calculator.cpp.orig
+@@ -3,13 +3,13 @@
+ int Calculator::Add (double a, double b)
+ {
+ <<<<<<< HEAD
+-    return a + b;
+-=======
+ 	return a + b + 0.5;
+->>>>>>> 4ad40a3 (fix truncation error)
++=======
++	return a + b;
++>>>>>>> cbcb06d (formatting: use tabs instead of spaces)
+ }
+ 
+ int Calculator::Sub (double a, double b)
+ {
+-    return Add (a, -b);
++	return Add (a, -b);
+ }
+diff --git a/calculator.h b/calculator.h
+index 3740907..d59d596 100644
+--- a/calculator.h
++++ b/calculator.h
+@@ -3,9 +3,9 @@
+ 
+ class Calculator
+ {
+-    public:
+-        int Add (double, double);
+-        int Sub (double, double);
++	public:
++		int Add (double, double);
++		int Sub (double, double);
+ };
+ 
+ #endif//CALCULATOR_H
+-- 
+2.36.1.windows.1
+
